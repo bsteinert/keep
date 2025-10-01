@@ -53,11 +53,11 @@ To send alerts from LibreNMS to Keep, Use the following webhook url to configure
 2. Create transport with type API and POST method
 3. Give a Transport Name and select Transport Type as API
 4. Select the API Method as POST
-3. Enter first part (without the options) of the Keep webhook URL as API URL: {keep_webhook_api_url} (until the "?")
-4. Remove the questionmark and put the remaining string starting with "provider_id=" under Options
-5. Add header "X-API-KEY" with your Keep API key (webhook role)
-6. For JSON body format, refer to [Keep documentation](https://docs.keephq.dev/providers/documentation/libre_nms-provider)
-7. Save the transport
+5. Enter first part (without the options) of the Keep webhook URL as API URL: {keep_webhook_api_url} (until the "?")
+6. Remove the questionmark and put the remaining string starting with "provider_id=" under Options
+7. Add header "X-API-KEY" with your Keep API key (webhook role)
+8. For JSON body format, refer to [Keep documentation](https://docs.keephq.dev/providers/documentation/libre_nms-provider)
+9. Save the transport
     """
 
     PROVIDER_DISPLAY_NAME = "LibreNMS"
